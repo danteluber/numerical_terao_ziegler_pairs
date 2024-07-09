@@ -1,1 +1,3 @@
 This repository contains the data and computational steps to reproduce and verify the some of the main results in the paper "On the Numerical Terao's Conjecture and Ziegler pairs for line arrangements", by L. Kühne, D. Luber, and P. Pokoroa.
+
+The data section contains the query strings that were used in the proof of Theorem 1.5 in the above article. They were used to query the [database of matroids of rank 3 with up to 14 elements and splitting characteristic polynomial](https://matroid.mathematik.uni-siegen.de). The results that are discussed in the paper are contained in the corresponding 'JSON' files.
