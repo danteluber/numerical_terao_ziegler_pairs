@@ -1,1 +1,1 @@
-This repository contains the data and computations to reproduce the main results in the paper "On the Numerical Terao's Conjecture and Ziegler pairs for line arrangements", by L. Kuehne, D. Luber, and P. Pokoroa.
+This repository contains the data and computations to reproduce the main results in the paper "On the Numerical Terao's Conjecture and Ziegler pairs for line arrangements", by L. Kühne, D. Luber, and P. Pokoroa.
