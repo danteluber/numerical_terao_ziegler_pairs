@@ -1,0 +1,14 @@
+Let N = 11
+FOR d1 IN matroids_split_public
+  FILTER d1.NumberOfAtoms == N && d1.Characteristic == 0 && d1.IsDivisionallyFree == false
+    FOR d2 in matroids_split_public
+      FILTER d2.NumberOfAtoms == N  && d1.MultiplicityVector == d2.MultiplicityVector  && d2.Characteristic == 0
+        FILTER d1._key < d2._key || d2.IsDivisionallyFree == true
+          RETURN { DivFree1 : d1.IsDivisionallyFree,
+                   DivFree2 : d2.IsDivisionallyFree,
+                   mv: d1.MultiplicityVector,
+                   exp: d1.Exponents,
+                   ring1 : d1.CoordinateRingOfModuliSpace,
+                   ring2 : d2.CoordinateRingOfModuliSpace,
+                   coAtoms1 : d1.ListOfCoatoms,
+                   coAtoms
